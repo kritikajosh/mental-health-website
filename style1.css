@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right,rgb(187, 163, 216), rgb(190, 173, 218));
+}
+.form_container {
+    width: 30vw;
+    padding: 25px 15px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    color:black;
+}
+.form_container input {
+    padding: 5px;
+}
+.form_container button {
+    padding: 5px;
+    background-color:lightseagreen;
+    color:white;
+    cursor: pointer;
+    margin-left: 40px;
+}

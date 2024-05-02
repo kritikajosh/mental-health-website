@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta character="utf-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1">
+        <title>MENTAL HEALTH </title>
+        <link ref="stylesheet" href="../css/stylesheet.css">
+    </head>
+    <body>
+        <style>
+            body{
+                text-align: center;
+                background-image: url(bg5.jpeg);
+                background-repeat: no-repeat;
+                background-size: 1550px;
+                background-attachment: fixed;
+                background-position: center;
+                margin-top: 190px;
+
+            }
+            #signupbtn{
+                padding: 5px;
+                font-size: 15px;
+                border-radius: 5px;
+                width: 5%;
+                background-color: #95afc0;
+                color: white;
+            }  
+            #bodysection{
+                background-color: rgba(245, 245, 220, 0.915);
+                width: 500px;
+                height: 200px;
+                opacity:0.9;
+                margin-left: 500px;
+            }
+        </style>
+        <div id = "bodysection">
+            <form method = "post" action = "signup.php" id="loginForm" style="display: none;">
+                <br><br>Enter Username: <input type="text" name="uname"><br><br>
+                Enter Password: <input type="text" name="pass"><br><br>
+                <input type="submit" 
+                style="padding: 5px;
+                        font-size: 15px;
+                        border-radius: 5px;
+                        width: 17%;
+                        background-color: #95afc0;
+                        color: white;"
+                name="submit" ><br><br> Already have an account?<a href="login.html">Login</a>
+            <form>
+        </div>
+        <script>
+// Function to show the login/signup form after 5 seconds
+function showForm() {
+    document.getElementById("loginForm").style.display = "block";
+}
+
+// Wait for 5 seconds before showing the form
+setTimeout(showForm, 500); // 5000 milliseconds = 5 seconds
+</script>
+    </body>
+</html>

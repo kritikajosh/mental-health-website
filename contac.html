@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="Catalyst_MentalHealth_Social_Thumbnail (1).ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.contact-form{
+    margin: 50px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgb(231, 161, 188);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+button {
+  background-color: #fcfcfc;
+  color: rgb(230, 130, 130);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ece0e0;
+}
+.navbar{
+    display: inline-block;
+    width:100%;
+    background: rgba(255, 252, 252, 1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.18);
+    height: 60px;
+    }
+.container {
+  border-radius: 5px;
+  background-color: #e4d8d8;
+  padding: 20px;
+}
+</style>
+<body>
+  <div class="section-1">
+    <div class="navbar">              
+      <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="disorders.html">Disorders</a></li>
+        <li class="dropdown">
+<a href="javascript:void(0)" class="dropbtn">Self Assesments</a>
+<div class="dropdown-content">
+<a href="form1 (2).html">Depression test</a>
+<a href="form2.html">Anxiety test</a>
+<a href="form3 (1).html">ADHD test</a>
+</div>
+</li>
+        <li><a href="contac.html">Contact</a></li>
+      </ul>
+</div>
+
+  </div>
+  <p id="r2"><img src="Catalyst_MentalHealth_Social_Thumbnail (1).ico" 
+    style="width:8.1%;height:9.1%; vertical-align: middle;">MENTAL  HEALTH 
+    <img src="istockphoto-1340965910-612x612.jpg" style="width: 8.1%;height:9.1%; vertical-align: middle;" ></p>
+    <div class="contact-form">
+        <h3>TALK TO A THERAPIST</h3>
+        <div class="container">
+        <form method="post" action="contact.php">
+        <label for="fname">NAME</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">EMAIL</label>
+        <input type="text" id="lname" name="email" placeholder="Email">
+
+        <label for="country">COUNTRY</label>
+        <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="ind">India</option>
+        <option value="Germany">Germany</option>
+      
+        </select>
+
+        <label for="subject">YOUR MESSAGE</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit"  name="submit">
+        </form>
+    </div>
+    
+</body>
+</html>
